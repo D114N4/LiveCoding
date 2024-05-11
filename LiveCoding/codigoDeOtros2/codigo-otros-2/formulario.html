@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"  href="./styles.css" type="text/css" media="screen"> <!--Estilos estaba colocadas mal el orden de href,type, media-->
+  <title>Formulario</title>
+</head>
+<body>
+  <h1>Bienvenidos a mi fiesta</h1>
+  <h2>Por favor, confirmar asistencia:</h2>
+
+  <form class="formulario">
+    <h3>Nombre <input type="text" name="nombre" id="name"></h3><!--Correcion al numero de titulo-->
+    <br />
+    <h4>Edad <input type="number" name="age" id="age"></h4> <!--Falta etiqueta--> 
+    <br />
+  
+  <h5> Nacionalidad</h5> <!--Faltaban etiquetas de html para este titulo-->
+    <select name="nationality" id="nationality">
+      <option value="ar">Argentina</option>
+      <option value="mx">Mexicana</option>
+      <option value="per">Peruana</option>
+      <option value="vnzl">Venezolana</option>
+    </select>
+    <br />
+    <input type="submit">
+  </form>
+
+  <div>
+    <h6 class="lista_invitados">Lista de invitados</h6><!--Correcion al numero de titulo, tambien se agrego la clase para poder llamarla en JS-->
+
+  </div>
+
+  <script src="./formulario.js"></script> <!--Script estaba mal la direccion del mismo-->
+</body>
+
+</html>
